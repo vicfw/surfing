@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HeroSection />
 
       <HeroSection />
