@@ -1,0 +1,10 @@
+.hero {
+    height: 60vh;
+}
+
+
+@media screen and (max-width: 640px) {
+    .hero {
+            height: 40vh;
+    }
+  }
