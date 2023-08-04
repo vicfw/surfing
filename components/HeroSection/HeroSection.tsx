@@ -11,17 +11,17 @@ const HeroSection = () => {
       {/* header section */}
       <header className="h-11  grid grid-cols-[20%_minmax(90%,_1fr)] items-center mb-10">
         <Image src="/images/logo.png" width={20} height={20} alt="logo" />
-        <nav className="flex gap-14 uppercase text-sm">
-          <span className="tracking-widest font-extrabold text-gray-700 text-xs">
+        <nav className="flex lg:gap-14 gap-3 uppercase text-sm">
+          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
             Stories
           </span>
-          <span className="tracking-widest font-extrabold text-gray-700 text-xs">
+          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
             Events
           </span>
-          <span className="tracking-widest font-extrabold text-gray-700 text-xs">
+          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
             Places
           </span>
-          <span className="tracking-widest font-extrabold text-gray-700 text-xs">
+          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
             Boards
           </span>
         </nav>
@@ -69,7 +69,7 @@ const HeroSection = () => {
         <div className="text-center flex items-center justify-between flex-col">
           <p
             style={{ fontSize: "0.6rem" }}
-            className="text-gray-400 overflow-visible tracking-widest uppercase -rotate-90 whitespace-nowrap mt-20 lg:mt-11"
+            className="text-gray-400 overflow-visible lg:tracking-widest tracking-wider uppercase -rotate-90 whitespace-nowrap mt-20 lg:mt-11"
           >
             First surfing magazine
           </p>
