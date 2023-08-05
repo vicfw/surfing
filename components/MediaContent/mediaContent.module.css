@@ -1,0 +1,14 @@
+.mediaContentWrapper::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    opacity: 0.02;
+    background-image: url("/images/shop_bg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
