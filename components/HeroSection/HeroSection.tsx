@@ -4,10 +4,11 @@ import React from "react";
 import style from "./styles.module.css";
 import { BiLogoTwitter, BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import withLines from "../HOC/WithLines";
+import Container from "../UI/Container";
 
 const HeroSection = () => {
   return (
-    <div className="w-full lg:py-10 lg:px-40 py-5 px-5">
+    <Container>
       {/* header section */}
       <header className="h-11  grid grid-cols-[20%_minmax(90%,_1fr)] items-center mb-10">
         <Image src="/images/logo.png" width={20} height={20} alt="logo" />
@@ -94,7 +95,7 @@ const HeroSection = () => {
           jhon mccarthy
         </p>
       </section>
-    </div>
+    </Container>
   );
 };
 

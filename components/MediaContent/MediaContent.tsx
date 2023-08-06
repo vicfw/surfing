@@ -3,12 +3,11 @@ import React from "react";
 import withLines from "../HOC/WithLines";
 import { BiPlay } from "react-icons/bi";
 import style from "./mediaContent.module.css";
+import Container from "../UI/Container";
 
 const MediaContent = () => {
   return (
-    <section
-      className={`w-full  lg:py-20 lg:px-40 py-5 px-5 ${style.mediaContentWrapper}`}
-    >
+    <Container className={`${style.mediaContentWrapper}`}>
       <div className="relative h-screen  grid grid-cols-[45%_45%_10%] items-center justify-center">
         <div
           style={{ width: "106%" }}
@@ -44,7 +43,7 @@ const MediaContent = () => {
         </div>
         <></>
       </div>
-    </section>
+    </Container>
   );
 };
 

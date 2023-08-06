@@ -5,9 +5,12 @@ import surf_1 from "../../public/images/surfboard_1.png";
 import surf_2 from "../../public/images/surfboard_2.png";
 import surf_3 from "../../public/images/surfboard_3.png";
 import style from "./shop.module.css";
+import Surf from "./Surf/Surf";
+import { SurfType } from "@/types/golbal.types";
+import Container from "../UI/Container";
 
 const Shop = () => {
-  const surfBoardData = useMemo(() => {
+  const surfBoardData: SurfType[] = useMemo(() => {
     return [
       {
         id: 1,
@@ -34,9 +37,7 @@ const Shop = () => {
   }, []);
 
   return (
-    <section
-      className={`w-full  lg:py-20 lg:px-40 py-5 px-5 h-screen ${style.shopWrapper}`}
-    >
+    <Container className={`${style.shopWrapper}`}>
       <p className="uppercase tracking-widest text-blue-400 text-xs font-bold text-center">
         shop
       </p>
@@ -47,45 +48,7 @@ const Shop = () => {
       <div className="grid  grid-cols-[1fr_1fr_1fr] mt-10 place-items-center">
         {/* item */}
         {surfBoardData.map((surfBoard) => (
-          <div
-            className="relative flex items-center justify-center gap-10 w-full"
-            key={surfBoard.id}
-          >
-            {/* image */}
-            <div className="flex self-center">
-              <Image
-                src={surfBoard.image}
-                alt="surf"
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
-              <div
-                style={{
-                  zIndex: -1,
-                  width: "57%",
-                  height: "87%",
-                  backgroundColor: "#ececec",
-                }}
-                className="absolute left-0 -bottom-10"
-              ></div>
-            </div>
-            {/* info */}
-            <div className="flex flex-col mt-20">
-              <p className="uppercase tracking-widest text-gray-400 text-xs">
-                {surfBoard.category}
-              </p>
-              <p className="text-2xl">{surfBoard.name}</p>
-              <div className="mt-7 text-center">
-                <p className="text-pink-500 text-xl">$ {surfBoard.price}</p>
-                <p className="uppercase tracking-widest text-gray-800 text-xs font-bold">
-                  buy
-                </p>
-              </div>
-            </div>
-          </div>
+          <Surf {...surfBoard} />
         ))}
       </div>
       {/* show all */}
@@ -94,7 +57,7 @@ const Shop = () => {
           show all
         </span>
       </div>
-    </section>
+    </Container>
   );
 };
 
