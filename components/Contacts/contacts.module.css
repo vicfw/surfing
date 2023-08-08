@@ -1,0 +1,10 @@
+.imageWrapper{
+    flex:2
+}
+
+
+@media screen and (max-width: 640px) {
+    .imageWrapper {
+          flex:none;
+    }
+  }

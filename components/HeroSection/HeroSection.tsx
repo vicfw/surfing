@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div>
           <div className="absolute bottom-0 flex gap-2 items-center">
             <span className="text-gray-300 lg:text-2xl text-md"> &lt;</span>
-            <p>
+            <p className="text-xs lg:text-lg">
               <span className="text-blue-300 font-bold text-md">1</span>/
               <span className="font-bold text-md">5</span>
             </p>
