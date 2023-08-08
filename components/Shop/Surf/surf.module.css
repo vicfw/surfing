@@ -1,0 +1,14 @@
+.imageBg {
+    z-index: -1;
+    width: 57%;
+    height: 87%;
+    background-color: #ececec;
+}
+
+@media screen and (max-width: 640px) {
+    .imageBg {
+    width: 45%;
+    height: 92%;
+          
+    }
+  }

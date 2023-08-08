@@ -1,13 +1,14 @@
 import { SurfType } from "@/types/golbal.types";
 import Image from "next/image";
 import React, { FC } from "react";
+import style from "./surf.module.css";
 
 interface SurfIProps extends SurfType {}
 
 const Surf: FC<SurfIProps> = ({ id, category, image, name, price }) => {
   return (
     <div
-      className="relative flex items-center justify-center gap-10 w-full"
+      className="relative flex lg:items-center items-end justify-center gap-10 w-full"
       key={id}
     >
       {/* image */}
@@ -22,23 +23,17 @@ const Surf: FC<SurfIProps> = ({ id, category, image, name, price }) => {
           }}
         />
         <div
-          style={{
-            zIndex: -1,
-            width: "57%",
-            height: "87%",
-            backgroundColor: "#ececec",
-          }}
-          className="absolute left-0 -bottom-10"
+          className={`absolute left-0 lg:-bottom-1 -bottom-1 ${style.imageBg}`}
         ></div>
       </div>
       {/* info */}
-      <div className="flex flex-col mt-20">
+      <div className="flex flex-col lg:mt-20">
         <p className="uppercase tracking-widest text-gray-400 text-xs">
           {category}
         </p>
-        <p className="text-2xl">{name}</p>
+        <p className="lg:text-2xl text-xl">{name}</p>
         <div className="mt-7 text-center">
-          <p className="text-pink-500 text-xl">$ {price}</p>
+          <p className="text-pink-500 lg:text-xl text-lg">$ {price}</p>
           <p className="uppercase tracking-widest text-gray-800 text-xs font-bold">
             buy
           </p>

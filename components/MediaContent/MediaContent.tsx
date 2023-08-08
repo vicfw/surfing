@@ -8,18 +8,15 @@ import Container from "../UI/Container";
 const MediaContent = () => {
   return (
     <Container className={`${style.mediaContentWrapper}`}>
-      <div className="relative h-screen  grid grid-cols-[45%_45%_10%] items-center justify-center">
+      <div
+        className={`relative lg:h-screen  grid lg:grid-cols-[45%_45%_10%]  items-center lg:justify-center overflow-hidden gap-52 lg:gap-0 ${style.container}`}
+      >
         <div
           style={{ width: "106%" }}
-          className="relative bottom-40 h-96 flex justify-center"
+          className="relative lg:bottom-40 lg:h-96  flex  justify-center flex-wrap items-center  h-full"
         >
-          <Image
-            src="/images/surf_1.jpg"
-            objectFit="cover"
-            alt="massive_waves"
-            fill
-          />
-          <p className="absolute -bottom-28 w-1/2 text-gray-400">
+          <Image src="/images/media.png" objectFit="cover" alt="media" fill />
+          <p className="absolute -bottom-28 lg:w-1/2 w-full text-gray-400">
             By better understanding the various aspects of surfing, you will
             improve faster and have more fun in the water.
           </p>

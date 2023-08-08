@@ -1,5 +1,6 @@
 import Articles from "@/components/Articles/Articles";
 import Contacts from "@/components/Contacts/Contacts";
+import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import MediaContent from "@/components/MediaContent/MediaContent";
 import Shop from "@/components/Shop/Shop";
@@ -14,6 +15,7 @@ export default function Home() {
       <Articles />
       <Subscribe />
       <Contacts />
+      <Footer />
     </div>
   );
 }

@@ -41,18 +41,18 @@ const Shop = () => {
       <p className="uppercase tracking-widest text-blue-400 text-xs font-bold text-center">
         shop
       </p>
-      <p className="text-center font-bold text-5xl text-gray-800 mt-4">
+      <p className="text-center font-bold lg:text-5xl text-4xl text-gray-800 mt-4">
         Surfboards
       </p>
       {/* items container */}
-      <div className="grid  grid-cols-[1fr_1fr_1fr] mt-10 place-items-center">
+      <div className="grid  lg:grid-cols-[1fr_1fr_1fr] grid-rows-3 lg:grid-rows-none lg:gap-0 gap-10 mt-10">
         {/* item */}
         {surfBoardData.map((surfBoard) => (
           <Surf {...surfBoard} />
         ))}
       </div>
       {/* show all */}
-      <div className="text-center mt-24">
+      <div className="text-center lg:mt-24 mt-16">
         <span className="font-bold text-xs  uppercase tracking-widest text-gray-900 border-solid border-b-2 pb-2 border-blue-400 ">
           show all
         </span>

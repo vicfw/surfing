@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import withLines from "../HOC/WithLines";
 
 const Contacts = () => {
   return (
     <div className="flex py-20 pr-20 gap-32">
       {/* photo */}
       <div style={{ flex: 2 }} className="relative w-full h-96">
-        <Image src="/images/article_1.png" alt="" fill />
+        <Image src="/images/contact.png" alt="" fill />
       </div>
       {/* content */}
       <div
@@ -34,4 +35,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default withLines(Contacts);

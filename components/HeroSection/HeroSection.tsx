@@ -5,6 +5,7 @@ import style from "./styles.module.css";
 import { BiLogoTwitter, BiLogoFacebook, BiLogoInstagram } from "react-icons/bi";
 import withLines from "../HOC/WithLines";
 import Container from "../UI/Container";
+import Nav from "../UI/Nav";
 
 const HeroSection = () => {
   return (
@@ -12,20 +13,7 @@ const HeroSection = () => {
       {/* header section */}
       <header className="h-11  grid grid-cols-[20%_minmax(90%,_1fr)] items-center mb-10">
         <Image src="/images/logo.png" width={20} height={20} alt="logo" />
-        <nav className="flex lg:gap-14 gap-3 uppercase text-sm">
-          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
-            Stories
-          </span>
-          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
-            Events
-          </span>
-          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
-            Places
-          </span>
-          <span className="lg:tracking-widest tracking-wider font-extrabold text-gray-700 text-xs">
-            Boards
-          </span>
-        </nav>
+        <Nav />
         {/* hero section */}
       </header>
       <section
